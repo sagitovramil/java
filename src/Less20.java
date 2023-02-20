@@ -2,15 +2,11 @@ public class Less20 {
     public static void main(String[] a) {
 
     Human h1 = new Human("Bob",45);
-
     Human h2 = new Human("Tom",45);
+        h1.printNumber();
+        h2.printNumber();
 
-    Human.description = "Nice";
-    h1.getAll();
-    h2.getAll();
-    Human.description ="bad";
-    h1.getAll();
-    h2.getAll();
+
 
 
     }
@@ -19,10 +15,13 @@ class Human{
     private String name; // переменные объекта
     private int age;// переменные объекта
 
-    public static String description;
+    private static int countPeople;
+
+
     public Human(String name, int age){
         this.name = name;
         this.age = age;
+        countPeople++;
     }
     public void setName(String name){
         this.name = name;
@@ -31,10 +30,10 @@ class Human{
         this.age = age;
     }
 
-    public void getAll(){
-        System.out.println(name+ ","+age+","+ description );
-    }
-    public static void printAll(){
-        System.out.println();
+
+    public  void printNumber(){
+
+        System.out.println("Number of people is " + countPeople);
+
     }
 }
