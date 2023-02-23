@@ -3,6 +3,7 @@ public class Less20 {
 
     Human h1 = new Human("Bob",45);
     Human h2 = new Human("Tom",45);
+    h2.setName("fssdf");
         h1.printNumber();
         h2.printNumber();
 
