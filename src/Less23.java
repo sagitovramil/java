@@ -13,6 +13,9 @@ public class Less23 {
         sb.append(" my").append(" friend").append(" gf");//вместо конкатенации
         System.out.println(sb.toString());
 */
-        System.out.printf("String %10d",522);
+        System.out.printf("String %10d \n" ,522);
+        System.out.printf("String %10d",1210522);
+         //% заполняет при функции printf
+
     }
 }
